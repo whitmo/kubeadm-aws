@@ -25,6 +25,10 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 
 variable "k8stoken" {}
 
+variable "ami" {
+  default = "ami-01eb3061"
+}
+
 variable "access_key" {
   default = ""
 }
@@ -36,13 +40,13 @@ variable "secret_key" {
 variable "k8s-ssh-key" {}
 
 variable "region" {
-  default = "us-east-1"
+  default = "us-west-2"
 }
 
 variable "master-userdata" {
-    default = "master.sh"
+  default = "master.sh"
 }
 
 variable "worker-userdata" {
-    default = "worker.sh"
+  default = "worker.sh"
 }
